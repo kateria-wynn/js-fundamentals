@@ -1,7 +1,5 @@
 /* 
-Write a function called appendToString, which accepts two strings.
-
-The function should return a new string which consists of the second string appended to the first string.
+Write a function called appendToString, which accepts two strings. The function should return a new string which consists of the second string appended to the first string.
 
 Examples:
 
