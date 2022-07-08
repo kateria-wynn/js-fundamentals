@@ -24,8 +24,8 @@ function removeFromString(str, startIndex, charsToRemove) {
   for (let char of str) {
     newStr.push(char);
   }
-  console.log(newStr.splice(startIndex, charsToRemove));
-  console.log(newStr.join(''));
+  newStr.splice(startIndex, charsToRemove);
+  return newStr.join('');
 }
 removeFromString('Elie', 2, 2);
 removeFromString('Elie', 0, 1);
