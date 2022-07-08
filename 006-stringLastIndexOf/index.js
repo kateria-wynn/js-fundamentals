@@ -19,9 +19,9 @@ stringLastIndexOf('awesome', 'z'); // -1
 // push the index of current char into an array --> indexes ✅
 // outside of the loop, access the last element in the array ✅
 // --> indexes[indexes.length - 1]
-// if the last element in the array is an Number.isInteger()
+// if the last element in the array is a Number.isInteger()
 // return indexes[indexes.length - 1] ✅
-// if it's not an Number.isInteger() return -1 ✅
+// if it's not a Number.isInteger() return -1 ✅
 // There's a built in method lastIndex() but can't use.
 
 function stringLastIndexOf(word, singleChar) {
