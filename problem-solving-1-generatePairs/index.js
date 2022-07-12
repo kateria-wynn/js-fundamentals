@@ -8,3 +8,32 @@ generatePairs(2) // `[ [0, 0], [0, 1], [0, 2], [1, 1], [1, 2], [2, 2] ]`
 generatePairs(1) // `[ [0, 0], [0, 1], [1,1]]`
 generatePairs(0) // `[ [0, 0]]`
 */
+
+function generatePairs(integer) {
+  const result = [];
+  let countA = 0;
+  let countB = 0;
+
+  while (countA == countB || countA < countB) {
+    result.push([countA, countB]);
+    if (countA === integer && countB === integer) {
+      result.push([countA, countB]);
+      break;
+    } else {
+      countB++;
+    }
+    if (countB > integer) {
+      countA++;
+      countB = countA;
+    }
+  }
+  if (result.length === 2) {
+    result.splice(1, 1);
+  }
+  console.log(result);
+}
+
+generatePairs(0);
+generatePairs(1);
+generatePairs(2);
+generatePairs(3);
