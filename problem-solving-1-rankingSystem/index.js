@@ -9,8 +9,8 @@ rankings([100]); // [1]
 rankings([4, 2, 3, 1]); // [1, 3, 2, 4]
 */
 
-// do a numeric sort of the arr least to greatest
-// a + b
+// do a numeric sort of the arr greatest to least
+// a - b
 // loop over elements in arr
 
 function rankings(arr) {
@@ -35,7 +35,7 @@ function rankings(arr) {
   return result;
 }
 
-rankings([10, 5, 20]); // [2, 3, 1]
-rankings([6, 8, 1, 12, 4, 3, 9]); // [4, 3, 7, 1, 5, 6, 2]
-rankings([100]); // [1]
-rankings([4, 2, 3, 1]); // [1, 3, 2, 4]
+rankings([10, 5, 20]);
+rankings([6, 8, 1, 12, 4, 3, 9]);
+rankings([100]);
+rankings([4, 2, 3, 1]);
