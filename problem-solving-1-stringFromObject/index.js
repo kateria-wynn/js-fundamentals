@@ -14,3 +14,22 @@ _// "name = Elie, job = Instructor, isCatOwner = false"_
 stringFromObject({});
 _// ""_
 */
+
+// loop through properties in an obj --> for...in loop
+// template literal to build out the string
+// push each the strings to an object
+// .join(', ') --> creates a string from arr
+function stringFromObject(obj) {
+  const strArr = [];
+  if (Object.keys(obj).length === 0) {
+    return {};
+  } else {
+    for (let key in obj) {
+      strArr.push(`${key} = ${obj[key]}`);
+    }
+    return strArr.join(', ');
+  }
+}
+stringFromObject({});
+stringFromObject({ a: 1, b: '2' });
+stringFromObject({ name: 'Elie', job: 'Instructor', isCatOwner: false });
