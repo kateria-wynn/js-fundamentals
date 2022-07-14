@@ -7,3 +7,27 @@ countNumbers(['a','b','3','awesome','4']); // 2
 countNumbers(['32', '55', 'awesome', 'test', '100']); // 3
 countNumbers(`[]`); // 0
 */
+
+// create count var
+// if it's not an array --> return 0
+// else loop through each el of arr --> for...of loop
+// if el is not NaN isNaN()
+// count = count
+// else add one to count --> count++
+function countNumbers(arr) {
+  let count = 0;
+  if (Array.isArray(arr)) {
+    for (let el of arr) {
+      if (isNaN(Number(el))) {
+        count = count;
+      } else {
+        count++;
+      }
+    }
+  }
+  return count;
+}
+
+countNumbers(Array.isArray(`[]`));
+countNumbers(['a', 'b', '3', 'awesome', '4']);
+countNumbers(['32', '55', 'awesome', 'test', '100']);
