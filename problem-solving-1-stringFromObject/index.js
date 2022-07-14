@@ -22,7 +22,7 @@ _// ""_
 function stringFromObject(obj) {
   const strArr = [];
   if (Object.keys(obj).length === 0) {
-    return {};
+    return '';
   } else {
     for (let key in obj) {
       strArr.push(`${key} = ${obj[key]}`);
